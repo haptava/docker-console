@@ -125,11 +125,11 @@
           <programs>
             <program>
               <mainClass>io.haptava.servers.WarServer</mainClass>
-              <id>docker-warserver</id>
+              <id>warserver</id>
               <jvmSettings>
                 <systemProperties>
                   <systemProperty>
-                    log4j.configuration=file:"$BASEDIR"/log4j/log4j.properties
+                    log4j.configuration=file:"$BASEDIR"/../log4j/log4j.properties
                   </systemProperty>
                 </systemProperties>
               </jvmSettings>
