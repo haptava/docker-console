@@ -6,6 +6,8 @@ RUN apt-get update
 RUN apt-get -y install maven
 RUN apt-get clean
 
+VOLUME ["/haptava/conf"]
+
 COPY ./pom.xml /haptava/
 COPY ./log4j/ /haptava/log4j/
 ADD http://downloads.haptava.io/releases/0.9.39/lib/haptava-console.war /haptava/war/
