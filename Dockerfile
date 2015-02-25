@@ -4,6 +4,7 @@ MAINTAINER Paul Ambrose "pambrose@mac.com"
 
 RUN apt-get update
 RUN apt-get -y install maven
+RUN apt-get clean
 
 COPY ./pom.xml /haptava/
 COPY ./log4j/ /haptava/log4j/
