@@ -25,4 +25,4 @@ ENTRYPOINT ["/haptava/bin/warserver.sh", \
             "--war", "/haptava/war/haptava-console.war", \
 	        "-Dhaptava.securecookies.enabled=false"]
 
-# docker run -it --rm -p 8080:8080 haptava/console:0.9.39
+# docker run -it --rm -p 8080:8080 haptava/console:0.9.39 -u fred -p topsecret -ln docker-console
