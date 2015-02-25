@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2015 Paul Ambrose
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.haptava.apps</groupId>
+  <artifactId>docker-console</artifactId>
+  <packaging>pom</packaging>
+  <version>0.9.39</version>
+  <name>Docker Console</name>
+
+  <properties>
+    <maven.compiler.version>3.2</maven.compiler.version>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <maven.build.timestamp.format>yyyy-MM-dd-HH:mm:ss</maven.build.timestamp.format>
+
+    <haptava.version>0.9.39-SNAPSHOT</haptava.version>
+
+    <appassembler.version>1.9</appassembler.version>
+    <resources.version>2.6</resources.version>
+
+    <guava.version>18.0</guava.version>
+    <slf4j.version>1.7.10</slf4j.version>
+    <junit.version>4.11</junit.version>
+
+    <skipTests>true</skipTests>
+  </properties>
+
+  <repositories>
+    <!-- This is commented out for local dev -->
+    <repository>
+      <id>haptava-snapshots</id>
+      <name>Haptava Snapshots</name>
+      <url>http://maven.haptava.io:8080/nexus/content/repositories/snapshots/</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+    </repository>
+
+  </repositories>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>io.haptava</groupId>
+      <artifactId>haptava-war</artifactId>
+      <version>${haptava.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.haptava</groupId>
+      <artifactId>sudothought-jetty</artifactId>
+      <version>${haptava.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>1.0.0.GA</version>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+
+    <plugins>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.compiler.version}</version>
+        <configuration>
+          <optimize>true</optimize>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>appassembler-maven-plugin</artifactId>
+        <version>${appassembler.version}</version>
+
+        <configuration>
+          <assembleDirectory>target</assembleDirectory>
+          <binFileExtensions>
+            <unix>.sh</unix>
+          </binFileExtensions>
+
+          <platforms>
+            <platform>unix</platform>
+          </platforms>
+
+          <programs>
+            <program>
+              <mainClass>io.haptava.servers.WarServer</mainClass>
+              <id>docker-warserver</id>
+              <jvmSettings>
+                <systemProperties>
+                  <systemProperty>
+                    log4j.configuration=file:"$BASEDIR"/log4j/log4j.properties
+                  </systemProperty>
+                </systemProperties>
+              </jvmSettings>
+            </program>
+          </programs>
+        </configuration>
+
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>assemble</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+
+    </plugins>
+  </build>
+
+</project>
+
