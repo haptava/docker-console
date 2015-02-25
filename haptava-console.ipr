@@ -490,6 +490,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-core/0.9.39-SNAPSHOT/haptava-core-0.9.39-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: io.haptava:haptava-jmx:0.9.39-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-jmx/0.9.39-SNAPSHOT/haptava-jmx-0.9.39-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-jmx/0.9.39-SNAPSHOT/haptava-jmx-0.9.39-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-jmx/0.9.39-SNAPSHOT/haptava-jmx-0.9.39-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: io.haptava:haptava-restclient:0.9.39-SNAPSHOT">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-restclient/0.9.39-SNAPSHOT/haptava-restclient-0.9.39-SNAPSHOT.jar!/" />
@@ -503,13 +514,13 @@
     </library>
     <library name="Maven: io.haptava:haptava-war:0.9.39-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-war/0.9.39-SNAPSHOT/haptava-war-0.9.39-SNAPSHOT.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-war/0.9.39-SNAPSHOT/haptava-war-0.9.39-20150225.064314-24.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-war/0.9.39-SNAPSHOT/haptava-war-0.9.39-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-war/0.9.39-SNAPSHOT/haptava-war-0.9.39-20150225.064314-24-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-war/0.9.39-SNAPSHOT/haptava-war-0.9.39-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-war/0.9.39-SNAPSHOT/haptava-war-0.9.39-20150225.064314-24-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: io.haptava:sudothought-annotations:0.9.39-SNAPSHOT">

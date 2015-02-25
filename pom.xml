@@ -33,7 +33,6 @@
   </properties>
 
   <repositories>
-    <!-- This is commented out for local dev -->
     <repository>
       <id>haptava-snapshots</id>
       <name>Haptava Snapshots</name>
@@ -49,7 +48,6 @@
         <checksumPolicy>fail</checksumPolicy>
       </snapshots>
     </repository>
-
   </repositories>
 
   <dependencies>
@@ -113,7 +111,7 @@
               <jvmSettings>
                 <systemProperties>
                   <systemProperty>
-                    log4j.configuration=file:"$BASEDIR"/../log4j/log4j.properties
+                    log4j.configuration=file:"$BASEDIR"/log4j/log4j.properties
                   </systemProperty>
                 </systemProperties>
                 <extraArguments>
