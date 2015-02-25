@@ -23,5 +23,4 @@ ENTRYPOINT ["/haptava/target/bin/warserver.sh", \
             "--war", "/haptava/lib/haptava-console.war", \
 	        "-Dhaptava.securecookies.enabled=false"]
 
-# docker run -it --rm --entrypoint=/bin/bash haptava/console:0.9.39
 # docker run -it --rm -p 8080:8080 haptava/console:0.9.39

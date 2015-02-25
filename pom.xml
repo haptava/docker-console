@@ -114,13 +114,17 @@
 
         <configuration>
           <assembleDirectory>target</assembleDirectory>
-          <binFileExtensions>
-            <unix>.sh</unix>
-          </binFileExtensions>
+
+          <repositoryLayout>flat</repositoryLayout>
+          <repositoryName>lib</repositoryName>
 
           <platforms>
             <platform>unix</platform>
           </platforms>
+
+          <binFileExtensions>
+            <unix>.sh</unix>
+          </binFileExtensions>
 
           <programs>
             <program>
@@ -132,6 +136,9 @@
                     log4j.configuration=file:"$BASEDIR"/../log4j/log4j.properties
                   </systemProperty>
                 </systemProperties>
+                <extraArguments>
+                  <extraArgument>-server</extraArgument>
+                </extraArguments>
               </jvmSettings>
             </program>
           </programs>
