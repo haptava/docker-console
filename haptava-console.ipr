@@ -95,13 +95,6 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="haptava-console" />
-      </profile>
     </annotationProcessing>
   </component>
   <component name="CopyrightManager" default="" />
@@ -475,6 +468,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/io/dropwizard/metrics/metrics-servlets/3.1.0/metrics-servlets-3.1.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: io.haptava:haptava-api:0.9.39-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-api/0.9.39-SNAPSHOT/haptava-api-0.9.39-20150225.020453-21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-api/0.9.39-SNAPSHOT/haptava-api-0.9.39-20150225.020453-21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-api/0.9.39-SNAPSHOT/haptava-api-0.9.39-20150225.020453-21-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: io.haptava:haptava-conf:0.9.39-SNAPSHOT">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/io/haptava/haptava-conf/0.9.39-SNAPSHOT/haptava-conf-0.9.39-SNAPSHOT.jar!/" />
@@ -521,13 +525,13 @@
     </library>
     <library name="Maven: io.haptava:sudothought-annotations:0.9.39-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-annotations/0.9.39-SNAPSHOT/sudothought-annotations-0.9.39-SNAPSHOT.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-annotations/0.9.39-SNAPSHOT/sudothought-annotations-0.9.39-20150225.020432-22.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-annotations/0.9.39-SNAPSHOT/sudothought-annotations-0.9.39-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-annotations/0.9.39-SNAPSHOT/sudothought-annotations-0.9.39-20150225.020432-22-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-annotations/0.9.39-SNAPSHOT/sudothought-annotations-0.9.39-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-annotations/0.9.39-SNAPSHOT/sudothought-annotations-0.9.39-20150225.020432-22-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: io.haptava:sudothought-codehaus-json:0.9.39-SNAPSHOT">
@@ -539,6 +543,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-codehaus-json/0.9.39-SNAPSHOT/sudothought-codehaus-json-0.9.39-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.haptava:sudothought-dsji:0.9.39-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-dsji/0.9.39-SNAPSHOT/sudothought-dsji-0.9.39-20150225.020447-21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-dsji/0.9.39-SNAPSHOT/sudothought-dsji-0.9.39-20150225.020447-21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/io/haptava/sudothought-dsji/0.9.39-SNAPSHOT/sudothought-dsji-0.9.39-20150225.020447-21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: io.haptava:sudothought-fasterxml-json:0.9.39-SNAPSHOT">

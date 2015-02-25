@@ -26,6 +26,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: io.haptava:haptava-war:0.9.39-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: io.haptava:haptava-api:0.9.39-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: io.haptava:sudothought-annotations:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:sudothought-properties:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:sudothought-utils:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
@@ -44,13 +46,13 @@
     <orderEntry type="library" name="Maven: io.haptava:haptava-core:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:haptava-restclient:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:haptava-conf:0.9.39-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: io.haptava:sudothought-annotations:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:sudothought-fasterxml-json:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.retrofit:retrofit:1.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.3.1" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:sudothought-codehaus-json:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" name="Maven: io.haptava:sudothought-dsji:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:sudothought-jetty:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.haptava:sudothought-metrics:0.9.39-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-core:3.1.0" level="project" />
