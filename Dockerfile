@@ -17,7 +17,7 @@ RUN cd /haptava && mvn clean package && mv target/bin target/lib .
 WORKDIR /haptava
 
 # 8080 for console access, 8090 for admin servlets
-EXPOSE 8080, 8090
+EXPOSE 8080 8090
 
 ENV HAPTAVA_HOME /haptava
 
