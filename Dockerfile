@@ -1,5 +1,5 @@
 # Version: 0.0.1
-FROM dockerfile/java:oracle-java8
+FROM java:8
 MAINTAINER Paul Ambrose "pambrose@mac.com"
 
 RUN apt-get update
