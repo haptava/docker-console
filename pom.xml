@@ -20,12 +20,10 @@
 
     <maven.build.timestamp.format>yyyy-MM-dd-HH:mm:ss</maven.build.timestamp.format>
 
-    <haptava.version>0.9.39-SNAPSHOT</haptava.version>
-
-    <appassembler.version>1.9</appassembler.version>
+    <appassembler.version>1.10</appassembler.version>
     <resources.version>2.6</resources.version>
 
-    <guava.version>18.0</guava.version>
+    <haptava.version>0.9.39-SNAPSHOT</haptava.version>
     <slf4j.version>1.7.10</slf4j.version>
     <junit.version>4.11</junit.version>
 
