@@ -14,17 +14,15 @@
   <name>Docker Console</name>
 
   <properties>
-    <maven.compiler.version>3.2</maven.compiler.version>
-
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
     <maven.build.timestamp.format>yyyy-MM-dd-HH:mm:ss</maven.build.timestamp.format>
 
+    <maven.compiler.version>3.3</maven.compiler.version>
     <appassembler.version>1.10</appassembler.version>
-    <resources.version>2.6</resources.version>
+    <resources.version>2.7</resources.version>
 
     <haptava.version>0.9.39-SNAPSHOT</haptava.version>
-    <slf4j.version>1.7.10</slf4j.version>
+    <slf4j.version>1.7.12</slf4j.version>
     <junit.version>4.11</junit.version>
 
     <skipTests>true</skipTests>
