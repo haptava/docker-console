@@ -1,5 +1,6 @@
 # Version: 0.0.1
-FROM java:8
+#FROM java:8
+FROM frolvlad/alpine-oraclejdk8:latest
 MAINTAINER Paul Ambrose "pambrose@mac.com"
 
 RUN apt-get update
