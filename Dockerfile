@@ -1,6 +1,5 @@
 # Version: 0.0.1
-#FROM java:8
-FROM frolvlad/alpine-oraclejdk8:latest
+FROM java:8
 MAINTAINER Paul Ambrose "pambrose@mac.com"
 
 RUN apt-get update
@@ -10,7 +9,7 @@ RUN apt-get clean
 VOLUME ["/haptava/conf"]
 
 COPY ./pom.xml /haptava/
-COPY ./log4j/ /haptava/log4j/
+COPY ./conf/ /haptava/conf/
 ADD http://downloads.haptava.io/releases/0.9.39/lib/haptava-console.war /haptava/war/
 
 RUN cd /haptava && mvn clean package && mv target/bin target/lib .
